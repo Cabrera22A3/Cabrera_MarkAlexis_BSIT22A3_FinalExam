@@ -1,11 +1,13 @@
 package com.example.cabrera_markalexis_bsit22a3_finalexam
 
+import android.content.ClipData.Item
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -16,6 +18,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentSize
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextField
@@ -183,21 +186,39 @@ fun BodyContentAbout(modifier: Modifier = Modifier, navController: NavController
                     .align(Alignment.Top)
             )
         }
+
         Row {
-            //Description about the game.
-            Text(
-                text = "This game was created by the use of Android Studio Application."+
-                        " The things that I used in this code are Text, TextField, Column,"+
-                        " Row, and some modifier to make my UI to be aligned into the center.",
-                fontSize = 15.sp,
-                fontWeight = FontWeight.Bold,
-                textAlign = TextAlign.Justify,
-                color = Color.White,
-                modifier = Modifier
-                    .wrapContentSize(Alignment.TopCenter)
-                    .align(Alignment.Top)
-                    .padding(start = 20.dp, end = 20.dp, top = 15.dp)
-            )
+            LazyColumn(modifier = Modifier.fillMaxSize(.8f)){
+                item{
+                    //Description about the game.
+                    Text(
+                        text = "This game was created by the use of Android Studio Application."+
+                                " The things that I used in this code are Text, TextField, Column,"+
+                                " Row, and some modifier to make my UI to be aligned into the center."+
+                                " As the continuous commit in my Github Account, I will update and upgrade"+
+                                " my system's features based on the given activity of my professor. "+
+                                " As for the given activities, the first one was the activities which "+
+                                " includes Activities from 1 to 3 that Manipulation of Text, Images and "+
+                                " Column to design my application. The next Activity was the 4th one which"+
+                                " is the Usage of Random function and Button in an application. The 5th one was"+
+                                " the Interacting with the user and usage of tests in an application. The 6th one"+
+                                " was the Scrollable List with the use of LazyColumn function, which I used here in"+
+                                " the abouts page. The 7th one was the Different Design or Animation you can do with"+
+                                " your application. The 8th one was the NavHost Controller, Linking different kotlin "+
+                                " files which I used in the buttons to navigate the screens for my system. "+
+                                " The 9th one was the Connecting to the internet, usage of Retrofit Services. And"+
+                                " lastly was the 10th one which is the Database connection.",
+                        fontSize = 15.sp,
+                        fontWeight = FontWeight.Bold,
+                        textAlign = TextAlign.Justify,
+                        color = Color.White,
+                        modifier = Modifier
+                            .wrapContentSize(Alignment.TopCenter)
+                            .align(Alignment.Top)
+                            .padding(start = 20.dp, end = 20.dp, top = 15.dp)
+                    )
+                }
+            }
         }
         Row {
             //Back Button
