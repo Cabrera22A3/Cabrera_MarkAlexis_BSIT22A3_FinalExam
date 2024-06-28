@@ -6,7 +6,7 @@
     <string name="about_btn">ABOUT</string>
     <string name="back_btn">BACK</string>
     <string name="exit_btn">EXIT</string>
-    <string name="random_btn">NEXT</string>
+    <string name="random_btn">RANDOMIZE</string>
 
     //Checker Button
     <string name="check_btn">CHECK</string>
@@ -28,4 +28,35 @@
 
     //Button Names
     <string name="back_button">Back Button</string>
+
+    <string name="expand_button_content_description">See more or less information about a heroes.</string>
+
+    //para sa dropdowns chu chu
+    <string name="titleDropDownDescription1">
+        About on how this App/System made.
+    </string>
+    <string name="descDropDownDescription1">
+        This game was created by the use of Android Studio Application. The things that I used in this code are Text,
+        TextField, Column, Row, and some modifier to make my UI to be aligned into the center. As the continuous commit
+        in my Github Account, I will update and upgrade my systems features based on the given activity of my professor.
+        As for the given activities, the first one was the activities which includes Activities from 1 to 3 that Manipulation
+        of Text, Images and Column to design my application. The next Activity was the 4th one which is the Usage of Random
+        function and Button in an application. The 5th one was the Interacting with the user and usage of tests in an
+        application. The 6th one was the Scrollable List with the use of LazyColumn function, which I used here in
+        the abouts page. The 7th one was the Different Design or Animation you can do with your application. The
+        8th one was the NavHost Controller, Linking different kotlin files which I used in the buttons to
+        navigate the screens for my system. The 9th one was the Connecting to the internet, usage of Retrofit
+        Services. And lastly was the 10th one which is the Database connection.
+    </string>
+    <string name="asdf">
+        About on how to play the game.
+    </string>
+    <string name="ghjkl">
+        Just simply press START NOW button, then a new window will appear, enter your answer by the use of
+        UPPERCASE LETTERS, other cases will be considered as WRONG. By gaining correct answers a score will be added
+        in the other hand there will be deductions. Just do not get negative points. As for the game purpose,
+        you must know all of the pokemon displays and guess their names accordingly on who they are in the movie
+        called as Pokemon.
+    </string>
+
 </resources>
